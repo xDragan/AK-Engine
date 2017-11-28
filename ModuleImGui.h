@@ -38,6 +38,7 @@ public:
 	IMGUI_API void ShowConfigurationWindow(bool* p_open = NULL);
 	IMGUI_API void ShowAboutWindow(bool* p_open = NULL);
 	IMGUI_API void ShowEditorWindow(bool* p_open = NULL);
+	IMGUI_API void ShowGuiWindow(bool* p_open = NULL);
 	void AddLogToWindow(std::string toAdd);
 	void ProcessEvent(SDL_Event* event);
 
@@ -47,6 +48,7 @@ private:
 	bool openConfigurationWindow;
 	bool openAboutWindow;
 	bool openEditorWindow;
+	bool openUI;
 };
 
 #endif // __ModuleImGui_H__

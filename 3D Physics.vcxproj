@@ -78,6 +78,8 @@
   <ItemGroup>
     <ClInclude Include="Application.h" />
     <ClInclude Include="Brofiler-1.1.2\Brofiler.h" />
+    <ClInclude Include="C:\Users\Markuss\Desktop\Zelda-a-Link-to-the-Past-TRIBUTE\Motor2D\PugiXml\src\pugiconfig.hpp" />
+    <ClInclude Include="C:\Users\Markuss\Desktop\Zelda-a-Link-to-the-Past-TRIBUTE\Motor2D\PugiXml\src\pugixml.hpp" />
     <ClInclude Include="Color.h" />
     <ClInclude Include="Component.h" />
     <ClInclude Include="ComponentCamera.h" />
@@ -185,6 +187,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp" />
+    <ClCompile Include="C:\Users\Markuss\Desktop\Zelda-a-Link-to-the-Past-TRIBUTE\Motor2D\PugiXml\src\pugixml.cpp" />
     <ClCompile Include="Color.cpp" />
     <ClCompile Include="Component.cpp" />
     <ClCompile Include="ComponentCamera.cpp" />

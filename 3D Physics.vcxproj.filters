@@ -55,6 +55,9 @@
     <Filter Include="Sources\Tools\PPoint">
       <UniqueIdentifier>{e405acab-a971-47ff-abf9-4afd6c5c392d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sources\Tools\.XML">
+      <UniqueIdentifier>{e5346986-7702-4b28-9efe-a4eb880f2b85}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Module.h">
@@ -375,6 +378,12 @@
     <ClInclude Include="p2Point.h">
       <Filter>Sources\Tools\PPoint</Filter>
     </ClInclude>
+    <ClInclude Include="C:\Users\Markuss\Desktop\Zelda-a-Link-to-the-Past-TRIBUTE\Motor2D\PugiXml\src\pugiconfig.hpp">
+      <Filter>Sources\Tools\.XML</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Markuss\Desktop\Zelda-a-Link-to-the-Past-TRIBUTE\Motor2D\PugiXml\src\pugixml.hpp">
+      <Filter>Sources\Tools\.XML</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ModuleAudio.cpp">
@@ -601,6 +610,9 @@
     </ClCompile>
     <ClCompile Include="ModuleRenderer2D.cpp">
       <Filter>Sources\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Markuss\Desktop\Zelda-a-Link-to-the-Past-TRIBUTE\Motor2D\PugiXml\src\pugixml.cpp">
+      <Filter>Sources\Tools\.XML</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

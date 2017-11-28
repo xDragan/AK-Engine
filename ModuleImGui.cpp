@@ -72,9 +72,14 @@ update_status ModuleImGui::PreUpdate(float dt)
 //Update
 update_status ModuleImGui::Update(float dt)
 {
-	BROFILER_CATEGORY("Module ImGui Update", Profiler::Color::AliceBlue);
+	BROFILER_CATEGORY("Module ImGui Update", Profiler::Color::Azure);
 
 	//Main Menu Bar
+	if (App->input->GetKey(SDL_SCANCODE_F1) == KEY_DOWN)
+	{
+		openUI = !openUI;
+	}
+
 	if (ImGui::BeginMainMenuBar())
 	{
 		if (ImGui::BeginMenu("File"))
@@ -128,7 +133,6 @@ update_status ModuleImGui::Update(float dt)
 				ShellExecuteA(NULL, "open", "https://github.com/adriancl1/AK-Engine/issues", NULL, NULL, SW_SHOWNORMAL); 
 			}
 
-
 			ImGui::EndMenu();
 		}
 
@@ -150,6 +154,10 @@ update_status ModuleImGui::Update(float dt)
 	if (aboutActive)
 	{
 		ShowAboutWindow();
+	}
+	if (openUI)
+	{
+		ShowGuiWindow();
 	}
 
 	if (closeApp)
@@ -355,5 +363,27 @@ void ModuleImGui::ShowEditorWindow(bool* p_open)
 
 	App->sceneEditor->ShowEditor();
 
+	ImGui::End();
+}
+
+void ModuleImGui::ShowGuiWindow(bool * p_open)
+{
+
+	if (!ImGui::Begin("UI Elements", p_open))
+	{
+		ImGui::End();
+	}
+
+	if (ImGui::CollapsingHeader("Entities"))
+	{
+		if (ImGui::Button("Create button"))
+		{
+			//placeholder
+		}
+		if (ImGui::Button("BG Texture"))
+		{
+			//hold
+		}
+	}
 	ImGui::End();
 }

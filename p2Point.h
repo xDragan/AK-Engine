@@ -1,4 +1,5 @@
-//#include "p2Defs.h"
+#ifndef __P2POINT_H__
+#define __P2POINT_H__
 #include <math.h>
 
 template<class TYPE>
@@ -123,3 +124,5 @@ public:
 
 typedef p2Point<int> iPoint;
 typedef p2Point<float> fPoint;
+
+#endif

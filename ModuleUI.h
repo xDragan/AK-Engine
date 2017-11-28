@@ -1,6 +1,6 @@
 #include "Globals.h"
 #include "Application.h"
-
+/*
 enum GuiType 
 { 
 	BUTTON,
@@ -44,3 +44,4 @@ public:
 		
 
 };
+*/
