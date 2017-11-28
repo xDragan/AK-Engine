@@ -49,6 +49,12 @@
     <Filter Include="Sources\GameObjects\Resources">
       <UniqueIdentifier>{c6186d9a-837c-40f7-a9f6-f6450cd7a16f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Sources\Modules\UI">
+      <UniqueIdentifier>{e0aaf205-d9b0-422e-84d1-b62c2e4c6604}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sources\Tools\PPoint">
+      <UniqueIdentifier>{e405acab-a971-47ff-abf9-4afd6c5c392d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Module.h">
@@ -357,6 +363,18 @@
     <ClInclude Include="ResourceMesh.h">
       <Filter>Sources\GameObjects\Resources</Filter>
     </ClInclude>
+    <ClInclude Include="ModuleUI.h">
+      <Filter>Sources\Modules\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="uiEntity.h">
+      <Filter>Sources\Modules\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleRenderer2D.h">
+      <Filter>Sources\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="p2Point.h">
+      <Filter>Sources\Tools\PPoint</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ModuleAudio.cpp">
@@ -574,6 +592,15 @@
     </ClCompile>
     <ClCompile Include="ResourceMesh.cpp">
       <Filter>Sources\GameObjects\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleUI.cpp">
+      <Filter>Sources\Modules\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="uiEntity.cpp">
+      <Filter>Sources\Modules\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleRenderer2D.cpp">
+      <Filter>Sources\Modules</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

@@ -33,9 +33,14 @@ public:
 	bool PostUpdate();
 	bool CleanUp();
 
+	bool Blit(SDL_Texture* texture, int x, int y, const SDL_Rect* section = NULL, float speed = 1.0f, bool resize = true, double angle = 0, int pivot_x = INT_MAX, int pivot_y = INT_MAX, float posX = -999, float posY = -999) const;
 	void Erase(); //fill later
 	const SDL_Texture* GetAtlas();
 	void SaveUI();
 
+
+public:
+
+		
 
 };

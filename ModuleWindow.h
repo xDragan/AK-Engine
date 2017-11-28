@@ -34,6 +34,7 @@ public:
 	bool GetBorderless();
 	void SetFullDesktop(bool fullDesktop);
 	bool GetFullDesktop();
+	uint GetScale() const;
 
 public:
 	//The surface contained by the window
@@ -49,6 +50,7 @@ private:
 	bool fullscreen;
 	bool fullDesktop;
 	bool borderless;
+	uint scale;
 };
 
 #endif // __ModuleWindow_H__

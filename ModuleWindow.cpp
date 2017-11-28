@@ -320,3 +320,8 @@ bool ModuleWindow::GetFullDesktop()
 {
 	return fullDesktop;
 }
+
+uint ModuleWindow::GetScale() const
+{
+	return scale;
+}
